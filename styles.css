@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    width: 1440px;
+}
+body{
+    margin: 0;
+    height: 1080px;
+    width: 1440px;
+    overflow: hidden;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    background-color: #ecf0f3;
+}
+.container{
+    width: 850px;
+    height: 900px;
+    padding: 20px 35px 35px 35px;
+    border-radius: 40px;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+    position: absolute;
+    
+}
+.logo{
+    background: url(logo2.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf, -8px -8px 15px #fff;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    
+}
+.menubar{
+    flex: 1;
+    text-align: right;
+}
+.menubar--list{
+    list-style: none;
+    display:inline-block;
+    margin-left: 60px;
+}
+.menubar--design{
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
+.title{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 20px;
+    letter-spacing: 0.5px;
+}
+.sub-title{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+    letter-spacing: 6px;
+}
+.logo2{
+    width: 100px;
+}
+.fields{
+    width: 50%;
+    margin: auto;
+    padding: 75px 5px 5px 5px;
+}
+input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+}
+.yahoo-id, .password {
+    margin-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+.svg-icon{
+    height: 22px;
+    margin: 0 10px -3px 25px;
+}
+.checkbox{
+    margin-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: #aaa;
+
+}
+.checkbox--list{
+    margin-left: 50px;
+}
+button{
+    outline: none;
+    border:none;
+    cursor: pointer;
+    width: 50%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    text-align: center;
+    background-color: #02c8db;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+    transition: all 0.5s;
+    margin-left: 200px;
+    margin-bottom: 20px;
+    
+}
+button: hover {
+    background-color: #50e5b9;
+}
+button:active {
+    background-color: #88ef9e;
+}
+.dropdown{
+    margin-top: 20px;
+    position: relative;
+    width: 50%;
+    height: 60px;
+    background: #6a6a6a;
+    border-radius: 30px;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+    cursor: pointer;
+    margin-left: 200px;
+}
+.dropdown:active{
+    background: #b1b1b1;
+    background: inset 7px 7px 14px #cccdd1, inset -7px -7px 14px #ffffff;
+}
+.dropdown--input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+}
+.dropdown--input:focus{
+    outline: none;
+    border: none;
+}
+.dropdown i{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+     transition: all 500ms ease-in-out;
+}
+.dropdown.show i{
+    transform: translateY(-50%) rotate(180deg);
+    transition: all 500ms ease-in-out;
+}
+.options{
+    position: absolute;
+    top: 70px;
+    cursor: pointer;
+    width: 300px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+    cursor: pointer;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+    
+}
+.dropdown.show .options{
+    visibility: visible;
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+    
+}
+.options--li{
+    position: relative;
+    padding: 15px;
+    list-style-type: none;
+    color: #151515;
+    transition: all 500ms ease-in-out;
+}
+.options--li:first-child{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.options--li:last-child{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.options--li:hover{
+    background: rgba(0,0,0,.1);
+}
+.link{
+    padding-top: 10px;
+    text-align: center;
+}
+.link--textlink{
+    text-decoration: none;
+    color: #aaa;
+    font-size: 15px;
+}
