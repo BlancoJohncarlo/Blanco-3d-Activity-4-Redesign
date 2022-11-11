@@ -11,6 +11,7 @@ body{
     justify-content: center;
     color: #555;
     background-color: #ecf0f3;
+    font-size: 12px;
 }
 .container{
     width: 700px;
@@ -134,6 +135,7 @@ button:active {
     border-radius: 30px;
     box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
     cursor: pointer;
+    margin-bottom: 10px;
     margin-left: 160px;
 }
 .dropdown:active{
@@ -212,7 +214,7 @@ button:active {
     background: rgba(0,0,0,.1);
 }
 .link{
-    padding-top: 10px;
+    padding-top: 5px;
     text-align: center;
 }
 .link--textlink{
